@@ -6,4 +6,5 @@ docker run \
   -w `pwd` \
   -u $(id -u):$(id -g) \
   emscripten/emsdk \
-  emcc fibonacci.c -o fibonacci.js
+  emcc fibonacci.c -o fibonacci.wasm --no-entry
+  

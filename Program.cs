@@ -13,7 +13,7 @@ namespace WasmtimeTest1
             using var host = new Host(engine);
             using dynamic instance = host.Instantiate(module);
 
-            Console.WriteLine($"fib(12) = {instance.fibonacci(12)}");
+            Console.WriteLine($"fib(12) = {instance.fib(12)}");
         }
     }
 }
